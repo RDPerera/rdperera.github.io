@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilan Perera - Software Engineer & Photographer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add favicon -->
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
+    <style>
+        .zoom {
+            animation: zoomEffect 0.5s;
+        }
+
+        @keyframes zoomEffect {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="container">
+            <div style="display: flex; align-items: center;">
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#photography" class="nav-link">Photography</a></li>
+                <li><a href="#latest-blogs" class="nav-link">Blog</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header>
+        <div class="container">
+            <img src="resources/profile.jpg" alt="Dilan Perera" class="profile-img gallery-img">
+            <h1>Dilan Perera</h1>
+            <p>Senior Software Engineer | Tech Enthusiast | Photographer</p>
+            <div class="social-links">
+                <a href="https://github.com/RDPerera" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/indilanperera/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://medium.com/@dilanperera" target="_blank" title="Medium"><i class="fab fa-medium"></i></a>
+                <a href="https://twitter.com/dilanpererar" target="_blank" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/dilanpererar" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:r.dilanperera@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="section-content about-content">
+                <p>I am a Senior Software Engineer currently working at WSO2. I'm part of the Integration Team, where we build an amazing free and open-source low-code platform and programming language for developing integrations.
+
+</p><p>In my free time, I enjoy working with electronics and embedded systems to build interesting projects 
+    (at least for me).
+
+</p><p>Beyond coding, I am passionate about photography—capturing every moment I find cool and express unique.
+            </p></div>
+        </div>
+    </section>
+    
+    <section id="experience">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="section-content">
+                <div class="card experience-card">
+                    <div class="experience-header">
+                        <div class="experience-content">
+                            <h3>Senior Software Engineer</h3>
+                            <h4>WSO2, Sri Lanka - Micro Integrator Team</h4>
+                            <div class="date">February 2025 - Present</div>
+                            <p>As a Senior Software Engineer at WSO2, I continue to work on the Micro Integrator team, focusing on developing integration solutions for microservices and cloud-native applications. My role involves designing and implementing scalable, high-performance integration solutions that cater to the evolving needs of modern enterprises.</p>
+                        </div>
+                        <div class="organization-logo">
+                            <img src="resources/wso2-logo.png" alt="WSO2 Logo" class="side-logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="card experience-card">
+                    <img src="resources/experience2.jpg" alt="Software Engineer at WSO2" class="experience-img gallery-img">
+                    <h3>Software Engineer</h3>
+                    <h4>WSO2, Sri Lanka - Ballerina Integration Platform Team</h4>
+                    <div class="date">June 2023 - January 2025</div>
+                    <p>Involved in the development of the Ballerina programming language, an open-source project focused on simplifying integration through a code-first approach. This role required a deep understanding of both software design and network communication protocols, enabling me to significantly impact the evolution of this integration-centric programming language.</p>
+                </div>
+                <div class="card experience-card">
+                    <div class="experience-header">
+                        <div class="experience-content">
+                            <h3>Research Intern</h3>
+                            <h4>University of Colombo, Sri Lanka - Cognitive and Time Series Lab</h4>
+                            <div class="date">October 2021 - April 2022</div>
+                            <p>Conducted research in the area of "EEG Based Emotion Recognition". Applied concepts such as Digital Signal Processing, Time Series Processing, Algorithm Optimization, and various Deep/Machine Learning approaches.</p>
+                        </div>
+                        <div class="organization-logo">
+                            <img src="resources/uoc-logo.png" alt="UOC Logo" class="side-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>Research and Development Projects</h2>
+            <div class="section-content">
+                <div class="card project-card">
+                    <div class="project-header">
+                        <h3>Proktara</h3>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/watch?v=tMinFdiOme0" target="_blank" title="Demo"><i class="fas fa-video"></i></a>
+                        </div>
+                    </div>
+                    <p>A proctoring platform for mass examinations with optimized resource usage. Consists of web, desktop, and mobile applications implemented using various JavaScript-based frameworks.</p>
+                    <p><strong>Achievements:</strong> Best tertiary student project in APICTA 2021 among 1000+ projects from 16 countries. Also won TAD Hack Global 2021(Telnyx), NBQSA, and SLASSCOM awards.</p>
+                    <div class="skills">
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">React</span>
+                        <span class="skill">Node.js</span>
+                        <span class="skill">Electron</span>
+                    </div>
+                </div>
+                
+                <div class="card project-card">
+                    <img src="resources/project2.jpg" alt="FiremeX" class="project-img gallery-img">
+                    <div class="project-header">
+                        <h3>FiremeX</h3>
+                        <div class="project-links">
+                            <a href="https://www.youtube.com/watch?v=hPIZg4utJSY" target="_blank" title="Demo"><i class="fas fa-video"></i></a>
+                        </div>
+                    </div>
+                    <p>A smart CCTV NVR solution with fire detection capabilities. Implemented a Convolutional Neural Network for real-time image analysis with an accuracy of 93%.</p>
+                    <p><strong>Achievements:</strong> Won TIGC 2022, TAD Hack SriLanka 2022 and OpenHack 2021.</p>
+                    <div class="skills">
+                        <span class="skill">Python</span>
+                        <span class="skill">CNN</span>
+                        <span class="skill">Computer Vision</span>
+                        <span class="skill">IoT</span>
+                    </div>
+                </div>
+                
+                <div class="card project-card">
+                    <img src="resources/project3.png" alt="Prostasia" class="project-img gallery-img">
+                    <div class="project-header">
+                        <h3>Prostasia</h3>
+                    </div>
+                    <p>An AI-based violence, abuse, and rape detection application for women and children. Employed faster R-CNN model as a deep learning algorithm and Mel Frequency Cepstral Coefficients for feature extraction.</p>
+                    <p><strong>Achievements:</strong> South East Asia(SEA) finalist of ImagineCup 2021. Won first place in HackAI (AI and ML Hackathon).</p>
+                    <div class="skills">
+                        <span class="skill">Deep Learning</span>
+                        <span class="skill">R-CNN</span>
+                        <span class="skill">MFCC</span>
+                        <span class="skill">Audio Processing</span>
+                    </div>
+                </div>
+                
+                <div class="card project-card">
+                    <div class="project-header">
+                        <h3>Smart PetFeeder V1</h3>
+                        <div class="project-links">
+                            <a href="https://medium.com/@dilanperera/diy-smart-petfeeder-40f93718d666" target="_blank" title="Medium Article"><i class="fab fa-medium"></i></a>
+                        </div>
+                    </div>
+                    <p>A smart pet feeding solution built with IoT technologies to automate pet feeding schedules and monitor consumption patterns.</p>
+                    <div class="skills">
+                        <span class="skill">IoT</span>
+                        <span class="skill">Embedded Systems</span>
+                        <span class="skill">Wood Works</span>
+                        <span class="skill">Arduino</span>
+                        <span class="skill">Zigbee</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="section-content">
+                <div class="card education-card">
+                    <h3>Bachelor of Computer Science (Hons.)</h3>
+                    <h4>University Of Colombo School of Computing, Sri Lanka</h4>
+                    <div class="date">February 2018 - March 2023</div>
+                    <p><strong>GPA:</strong> 3.85/4.0 (First Class Honours)</p>
+                    <p><strong>Key Coursework:</strong></p>
+                    <div class="skills">
+                        <span class="skill">Data Structures and Algorithms</span>
+                        <span class="skill">Rapid Application Development</span>
+                        <span class="skill">Object Oriented Programming</span>
+                        <span class="skill">Functional Programming</span>
+                        <span class="skill">Operating Systems</span>
+                        <span class="skill">Computer Systems</span>
+                        <span class="skill">Compiler Theory</span>
+                        <span class="skill">Probability and Statistics</span>
+                        <span class="skill">Machine Learning</span>
+                        <span class="skill">Computer Vision</span>
+                        <span class="skill">Computer Networks</span>
+                    </div>
+                </div>
+                <div class="card education-card">
+                    <h3>Advanced Level</h3>
+                    <h4>Kalutara District, Sri Lanka</h4>
+                    <div class="date">August 2015 - August 2017</div>
+                    <p><strong>Z-Score:</strong> 1.99  <strong>District Rank: </strong>2</p>
+                    <p>Combined Mathematics, Physics and ICT</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="photography">
+        <div class="container">
+            <h2>Photography</h2>
+            <div class="section-content">
+                <div class="card">
+                    <p>Photography is my creative outlet where I capture moments, landscapes, and stories through my lens. Here's a selection of my favorite shots.</p>
+                    <div class="photo-gallery">
+                        <div class="photo-item">
+                            <img src="resources/photo1.jpg" alt="Landscape photo" class="gallery-img">
+                        </div>
+                        <div class="photo-item">
+                            <img src="resources/photo2.jpg" alt="Portrait photo" class="gallery-img">
+                        </div>
+                        <div class="photo-item">
+                            <img src="resources/photo3.jpg" alt="Wildlife photo" class="gallery-img">
+                        </div>
+                        <div class="photo-item">
+                            <img src="resources/photo4.jpg" alt="Urban photo" class="gallery-img">
+                        </div>
+                        <div class="photo-item">
+                            <img src="resources/photo5.jpg" alt="Nature photo" class="gallery-img">
+                        </div>
+                        <div class="photo-item">
+                            <img src="resources/photo6.jpg" alt="Abstract photo" class="gallery-img">
+                        </div>
+                    </div>
+                    <div class="instagram-button-container">
+                        <a href="https://www.instagram.com/dilanpererar" target="_blank" class="instagram-button-small">
+                            <i class="fab fa-instagram"></i> Follow me on Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="latest-blogs">
+        <div class="container">
+            <h2>Latest Blog Posts</h2>
+            <div class="section-content">
+                <ul id="blogs-container" class="blogs-list">
+                    <!-- Blog posts will be dynamically inserted here with images -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="achievements">
+    <div class="container">
+        <h2>Achievements</h2>
+        <div class="section-content">
+            <!-- Card-based layout for main achievements -->
+            <div class="card achievement-card">
+                <img src="resources/wso2-award.jpg" alt="WSO2 Corporate Award" class="achievement-img gallery-img">
+                <h3>Corporate Award - WSO2</h3>
+                <h4>Excellence in Customer Engagement - 2024</h4>
+                <p>Recognized for outstanding contributions to the Pekin Customer Engagement project, demonstrating exceptional problem-solving skills and technical leadership that significantly improved customer satisfaction and project outcomes.</p>
+            </div>
+
+            <div class="card achievement-card">
+                <img src="resources/achievement1.jpg" alt="APICTA Award" class="achievement-img gallery-img">
+                <h3>Asia Pacific ICT Alliance Awards (APICTA) 2020/21</h3>
+                <h4>Winner - Business & Industrial Category</h4>
+                <p>Best tertiary student project among 1000+ projects from 16 countries competing in the prestigious APICTA awards.</p>
+            </div>
+            
+            <div class="card achievement-card">
+                <img src="resources/achievement2.jpg" alt="TADHack Sri Lanka" class="achievement-img gallery-img">
+                <h3>TADHack Sri Lanka 2022</h3>
+                <h4>Winner</h4>
+                <p>Developed an innovative solution that addressed real-world problems through telecommunications technology & Winner - "Best Industry Hack" Category in TADHack Global 2022, recognized internationally for innovation and market potential.</p>
+            </div>
+            
+            <div class="card achievement-card">
+                <img src="resources/achievement4.jpg" alt="NBQSA Award" class="achievement-img gallery-img">
+                <h3>National ICT Awards (NBQSA) 2021/22</h4>
+                <h4>Silver Award - Business & Industrial Category</h4>
+                <p>Recognized for excellence in software development at the national level ICT awards in Sri Lanka.</p>
+            </div>
+            
+            <div class="card achievement-card">
+                <img src="resources/achievement5.jpg" alt="Slasscom Award" class="achievement-img gallery-img">
+                <h3>Slasscom National Ingenuity Awards 2022</h3>
+                <h4>Runner Up - Best Innovative Product</h4>
+                <p>Acknowledged for creating an innovative product with significant market potential and technological advancement.</p>
+            </div>
+            
+            <!-- New TIGC Achievement Card -->
+            <div class="card achievement-card">
+                <img src="resources/tigc-award.jpg" alt="TIGC Award" class="achievement-img gallery-img">
+                <h3>Think India Global Competition (TIGC)</h3>
+                <h4>Winner - Innovation Category</h4>
+                <p>Recognized for developing innovative technological solutions that address critical social and economic challenges, competing among participants from over 30 countries.</p>
+            </div>
+            
+            <div class="card achievement-card">
+                <img src="resources/achievement9.jpg" alt="Director's List" class="achievement-img gallery-img">
+                <h3>Director's List for Academic Performance</h3>
+                <h4>University of Colombo School of Computing (2017/2018)</h4>
+                <p>Recognized for outstanding academic achievement in computer science studies.</p>
+            </div>
+            
+            <!-- Other achievements in list format -->
+            <div class="card other-achievements">
+                <h3>Additional Achievements</h3>
+                <ul class="achievements-list">
+                    <li>
+                        <strong>TADHack Sri Lanka 2021</strong> - Runner Up. 
+                    <li>
+                        <strong>Hack: AI 2021-2022</strong> - Winner. 
+                    <li>
+                        <strong>OpenHack 2021</strong> - Winner. 
+                    <li>
+                        <strong>Code Rally 2022</strong> - Winner of individual competitive-programming competition.
+                    </li>
+                    <li>
+                        <strong>InteliHack 2021</strong> - First Runner Up.
+                    </li>
+                    <li>
+                        <strong>RealHack 2022</strong> - First Runner Up.
+                    </li>
+                    <li>
+                        <strong>SRE Hack 2021</strong> - First Runner Up (by Virtusa).
+                    </li>
+                    <li>
+                        <strong>Escaped The Loop</strong> - First Runner Up (Hackathon).
+                    </li>
+                    <li>
+                        <strong>IEEEXtreme 15/14/13</strong> - World Rank 285/316/420.
+                    </li>
+                    <li>
+                        <strong>MoraXtreame 2020</strong> - Finalist.
+                    </li>
+                    <li>
+                        <strong>Game Rush 2020</strong> - Finalist.
+                    </li>
+                    <li>
+                        <strong>Hacktitude 2022</strong> - Finalist.
+                    </li>
+                    <li>
+                        <strong>SLLIT Code Fest 2019</strong> - Finalist.
+                    </li>
+                    <li>
+                        <strong>SLIIT RoboFest 2019</strong> - Merit.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<section id="volunteering">
+    <div class="container">
+        <h2>Volunteering & Professional Services</h2>
+        <div class="section-content">
+            <div class="card">
+                <h3><i class="fas fa-hands-helping"></i> Volunteering</h3>
+                <ul class="icon-list">
+                    <li><i class="fas fa-user-shield"></i> Proctor - International Olympiad Of Informatics 2020 and 2021 (Singapore)</li>
+                    <li><i class="fas fa-chalkboard-teacher"></i> Mentor - National Olympiad Of Informatics 2020 and 2021 (Sri Lanka)</li>
+                    <li><i class="fas fa-chalkboard-teacher"></i> Mentor - Sri Lanka Olympiad Mathematics 2021</li>
+                    <li><i class="fas fa-user-graduate"></i> Instructor - StemUP Organization</li>
+                </ul>
+                
+                <div class="section-divider"></div>
+                
+                <h3><i class="fas fa-briefcase"></i> Professional Services</h3>
+                <ul class="icon-list">
+                    <li><i class="fas fa-user-tie"></i> President of the Media Club of the University of Colombo School of Computing</li>
+                    <li><i class="fas fa-coins"></i> Treasurer of the Computer Science Society (CompSoc) of the University of Colombo</li>
+                    <li><i class="fas fa-users-cog"></i> Member Training & Development Officer of the ISACA UCSC Student Group</li>
+                    <li><i class="fas fa-users"></i> Member of the Colombo ACM SIGCHI Chapter</li>
+                    <li><i class="fas fa-users"></i> Member of the ACM Student Chapter UCSC</li>
+                    <li><i class="fas fa-users"></i> Member of the IEEE UCSC Student Branch</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dilan Perera. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="scripts.js"></script>
+    <script src="fetchBlogs.js"></script>
+    <!-- Modal for image view - Caption removed -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+</body>
+</html>
